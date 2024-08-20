@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'popins',sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: aliceblue;
+  scroll-behavior: smooth;
+
+}
+:root{
+  --prime : #31f02e;
+}
+body{
+  background-color:rgb(17, 17, 39);
+}
+.navbar{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: #0c1518;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0.5s ease;
+}
+.navbar.sticky{
+  padding: 1px 60px;
+  background: #0c1518;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.navbar.sticky .logo{
+  width: 160px;
+  height: 100px;
+}
+.logo {
+  width: 160px;
+  height: 100px;
+  
+
+}
+
+ol{
+  display: flex;
+  margin: auto 0;
+
+}
+ol li{
+  list-style: none;
+  margin-right: 20px;
+
+}
+
+ol li a{
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ol li:hover a{
+  color: var(--prime);
+}
+
+.view{
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+.home{
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%);
+}
+
+.banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(images/WhatsApp\ Image\ 2024-08-06\ at\ 14.03.19_a74a7fd3.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(50%);
+}
+
+.hightlights{
+  width: 70%;
+  position: static;
+  display: inline-block;
+  z-index: 11;
+}
+
+.hightlights h3{
+  display: inline;
+  font-size: 3vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+}
+
+.hightlights h1{
+  font-size: 9vw;
+  text-align: center;
+  font-weight: normal;
+
+}
+
+.hightlights b{
+  color: var(--prime);
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.hightlights .tagline{
+  color: aliceblue;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hightlights .join{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  padding: 5px 20px;
+  font-size: 1.5vw;
+  margin-top: 1.2em;
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 50px;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.hightlights .join:hover{
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  background: var(--prime);
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+
+
+
+}
+
+.main h2{
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+}
+span{
+  color: var(--prime);
+}
+
+.main h2:before{
+  position: absolute;
+  content: '';
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  right: -15px;
+  bottom: 0;
+  border-radius: 50px;
+
+}
+
+.main h6{
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.content{
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: baseline;
+  font-size: 20px;
+  
+}
+.about{
+
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100;
+
+}
+
+.about .content .cols{
+
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 70px;
+
+}
+.about .content .cols p{
+  font-size: 14px;
+  font-family: sans-serif;
+  font-style:oblique;
+  font-weight: lighter;
+color: var(--prime);
+  line-height: 33px;
+}
+.about .content .cols p b{
+  font-size: 20px;
+  margin-right: 2px;
+  color: var(--prime);
+}
+
+.about .content .cols a{
+position: relative;
+top: 20px;
+color:var(--prime);
+background: transparent;
+padding: 5px 20px;
+border-radius: 5px;
+text-decoration: none;
+text-transform: capitalize;
+border: 2px solid var(--prime);
+}
+
+.about .content .cols a:hover{
+  color: #000;
+  background: #f9e4e4;
+}
+
+.about .content .cols .box{
+  position: relative;
+  height: 550px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about .content .cols .box img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.client .content{
+  flex-wrap: wrap;
+  object-fit: fill;
+}
+
+.client .content .frame{
+
+  position: relative;
+  width:350;
+  padding: 20px;
+  margin: 10px;
+  background: #222;
+  box-shadow: 0 10px 15px rgba(0, 0, 0,0.5);
+
+}
+
+.client .content .frame .box{
+  position: relative;
+  height: 350px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.client .content .frame .box img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: brightness(80%);
+  transition: 0.2s ease-in;
+  border-radius: 20px;
+}
+
+
+.client .content .frame .box:hover img{
+  filter: brightness(100%);
+transform: scale(1.09);
+}
+
+.client .content .frame .title{
+  color: var(--prime);
+  padding: 5px 0; 
+}
+
+.client .content .frame p{
+  font-size: 0.8em;
+}
+
+.trainers .content{
+  flex-wrap: wrap;
+}
+
+
+.trainers .content .frame{
+  position: relative;
+  width: 500px;
+  padding: 30px 30px 40px 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0,0.5);
+  margin: 10px;
+  background: #222;
+}
+
+.trainers .content .frame .box{
+  position: relative;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.trainers .content .frame .box img{
+  position: relative;
+  height: 100%;
+  width: 80%;
+  filter: grayscale(1);
+  object-fit: contain;
+transition: 0.2s ease-in;
+}
+
+.trainers .content .frame .box:hover img{
+  filter: grayscale(0);
+  transform: scale(1.08);
+}
+
+.trainers .content .frame .headline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+
+.trainers .content .frame .headline i{
+  height: 22px;
+  width: 22px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 0.9px;
+  cursor: pointer;
+  line-height: 22px;
+
+
+}
+
+.trainers .content .frame .headline:hover i{
+  border: 1.5px solid var(--prime);
+ 
+}
+
+
+.trainers .content .frame .headline .title{
+  color: var(--prime);
+  font-size: 1em;
+  line-height: 32px;
+}
+ 
+.trainers .content .frame p{
+  font-size: 0.9em;
+  position: relative;
+  bottom: 5px;
+  line-height: 22px;
+}
+
+.trainers .content .frame b{
+  top: 20px;
+  color: var(--prime);
+  background: transparent;
+  padding: 5px 20px;
+  border: 1.5px solid var(--prime);
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+  color: #fff;
+}
+
+.trainers .content .frame b:hover{
+ color: #fff;
+ background: var(--prime);
+  cursor: pointer;
+}
+
+
+.contact-form i.fa{
+  font-size: 22px;
+  padding: 2%;
+  background-color: none;
+  margin: 2%;
+  cursor: pointer;
+  border: 2px solid var(--prime);
+  border-radius: 65px;
+
+
+
+}
+
+.contact-form i.fa:hover{
+  cursor: pointer;
+border: #fff;
+  color:#fff;
+}
+
+.contact-form{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-info{
+  font-size: 16px;
+  font-style: italic;
+  color:var(--prime);
+  letter-spacing: 2px;
+}
+
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+input::placeholder{
+  color: #000;
+}
+
+.submit{
+  width: 20%;
+  border-color: var(--prime);
+  background:var(--prime);
+  color: #000;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+
+}
+
+.submit:hover{
+background: #fff;
+}
+
+
+.copyright{
+  text-transform: capitalize;
+  height: 40px;
+  width: 100%;
+  background: #222;
+line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.copyright a{
+  color: var(--prime);
+  text-decoration: none;
+  margin: 0 2px;
+  font-weight: lighter;
+}
+
+
+
+/*--------make responsive----*/
+
+@media (max-width:600px){
+  .navbar{
+    padding: 0 60px;
+  }
+
+  .navbar .logo{
+    width: 160px;
+    height: 100px;
+   display: inline-block;
+   
+  }
+
+  .navbar ol{
+    display: none;
+  }
+
+  .navbar ol.active{
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: #3f3636;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    height: calc(100% - 60px);
+  }
+
+  .navbar ol.active li{
+    margin: 8px;
+  }
+
+  .navbar ol.active li a{
+    font-size: 25px;
+  }
+  .navbar .toggle{
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+    cursor: pointer;
+    background: url(logo/menubar.jpg);
+    background-size: 25px;
+    background-position: center;
+    filter: invert(1);
+    background-repeat: no-repeat;
+  }
+
+  .navbar .toggle.active{
+    background:url(logo/close.png);
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  
+
+  .hightlights h3{
+    font-size: 3vm;
+    padding: 5px 10px;
+    border-left: 3px solid var(--prime);
+  }
+  
+ 
+  .hightlights h1{
+    font-size: 16vm;
+  }
+  .hightlights .join{
+    font-size: 1.8vm ;
+    border: 1px solid var(--prime);
+  }
+  .banner{
+    height: 100vh;
+        width: 100%;
+        background-size: cover;
+      
+        
+    }
+
+  .main h2{
+    font-size: 1.5rem;
+
+  }
+  .main h6{
+    font-size: 10px;
+  }
+  .about .content{
+    flex-direction: column;
+  }
+  .workout .content .frame{
+    width: 260px;
+    padding: 18px;
+  }
+
+  .trainers .content .frame{
+  width: 350px;
+  padding: 15px 15px 40px 15px;
+  margin: 10px 5px ;
+  }
+
+  .trainers .content .frame .box{
+    height: 200px;
+  }
+  #contact .adjust{
+    width:400px;
+    padding: 20px;
+    position: relative;
+  
+  }
+
+  #contact .contact-form{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  #contact .submit{
+    width: 60%;
+    text-align: center;
+
+  }
+
+  #copyright .right{
+   font-size: 2px;
+   line-height: 70px;
+  
+   
+   
+
+  }
+}
+
+
+
