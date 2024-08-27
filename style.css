@@ -496,7 +496,7 @@ line-height: 40px;
 
 /*--------make responsive----*/
 
-@media (max-width:768px){
+@media (max-width:600px){
   .navbar{
     padding: 0 60px;
   }
